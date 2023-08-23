@@ -3,84 +3,214 @@
     <head>
         <meta charset="utf-8" />
         <title>Svar</title>
+        <style>
+            /*** FONTS ***/
+            @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+            /*** STYLE ***/
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: "Raleway", sans-serif;
+            }
+
+            main {
+                display: block;
+                margin: 0 auto;
+                max-width: 40rem;
+                padding: 1rem;
+            }
+
+            ol.gradient-list {
+                counter-reset: gradient-counter;
+                list-style: none;
+                margin: 1.75rem 0;
+                padding-left: 1rem;
+                > li {
+                    background: white;
+                    border-radius: 0 0.5rem 0.5rem 0.5rem;
+
+                    counter-increment: gradient-counter;
+                    margin-top: 1rem;
+                    min-height: 3rem;
+                    padding: 1rem 1rem 1rem 3rem;
+                    position: relative;
+                    &::before,
+                    &::after {
+                        border-radius: 1rem 1rem 0 1rem;
+                        content: "";
+                        height: 3rem;
+                        left: -1rem;
+                        overflow: hidden;
+                        position: absolute;
+                        top: -1rem;
+                        width: 3rem;
+                    }
+                    &::before {
+                        align-items: flex-end;
+
+                        content: counter(gradient-counter);
+                        color: black;
+                        display: flex;
+                        font: 900 1.5em/1 "Montserrat";
+                        justify-content: flex-end;
+                        padding: 0.125em 0.25em;
+                        z-index: 1;
+                    }
+                    @for $i from 1 through 5 {
+                        &:nth-child(10n + #{$i}):before {
+                            background: linear-gradient(
+                                135deg,
+                                rgba($green, $i * 0.2) 0%,
+                                rgba($yellow, $i * 0.2) 100%
+                            );
+                        }
+                    }
+                    @for $i from 6 through 10 {
+                        &:nth-child(10n + #{$i}):before {
+                            background: linear-gradient(
+                                135deg,
+                                rgba($green, 1 - (($i - 5) * 0.2)) 0%,
+                                rgba($yellow, 1 - (($i - 5) * 0.2)) 100%
+                            );
+                        }
+                    }
+                    + li {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+            tr:not(.t-head) {
+                width: 100%;
+                padding: calc(12 * 1.5) 0;
+
+                &:nth-of-type(odd) {
+                    background: #eeeeee;
+                }
+            }
+
+            .t-head {
+                color: #fafafa;
+                background: #000;
+                padding: calc(24px * 1.5) 0;
+            }
+        </style>
     </head>
     <body>
         <nav>
             <a href="/index.html">Back</a>
         </nav>
-        <dl>
-            <dt>HTML</dt>
-            <dd>Hypertext Markup Language</dd>
-            <dt>Storyboards</dt>
-            <dd>Kommunikation och styling</dd>
-            <dt>Wireframes</dt>
-            <dd>Testar funktionalitet, t.ex. med "Figma"</dd>
-            <dt>Klient</dt>
-            <dd>Skickar HTTP-request för resurs</dd>
-            <dt>HTTP Request med HEAD Method</dt>
-            <dd>Skickas utan body, bara header</dd>
-            <dt>Hallway Testing</dt>
-            <dd>Slumpmässiga personer testar sidan</dd>
-            <dt>Webteknologier</dt>
-            <dd>
-                <ol type="a">
-                    <li>HTML - Textidentifiering med (h2) taggar</li>
-                    <li>CSS - Gör (h2) taggar blå</li>
-                    <li>JS - Validerar klientsidekod</li>
-                    <li>Ruby - Anpassad backend på serversidan</li>
-                </ol>
-            </dd>
-            <dt>FrontEnd och Backend</dt>
-            <dd>FrontEnd på klientsidan, Backend på serversidan</dd>
-            <dt>FTP-verktyg</dt>
-            <dd>Flyttar filer mellan datorer via nätverk</dd>
-        </dl>
+        <table>
+            <tr class="t-head">
+                <th>Ord</th>
+                <th>Definition</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Hypertext Markup Language</td>
+            </tr>
+            <tr>
+                <td>Storyboards</td>
+                <td>Kommunikation och styling</td>
+            </tr>
+            <tr>
+                <td>Wireframes</td>
+                <td>Testar funktionalitet, t.ex. med "Figma"</td>
+            </tr>
+            <tr>
+                <td>Klient</td>
+                <td>Skickar HTTP-request för resurs</td>
+            </tr>
+            <tr>
+                <td>HTTP Request med HEAD Method</td>
+                <td>Skickas utan body, bara header</td>
+            </tr>
+            <tr>
+                <td>Hallway Testing</td>
+                <td>Slumpmässiga personer testar sidan</td>
+            </tr>
+            <tr>
+                <td>Webteknologier</td>
+                <td>
+                    <ol type="a">
+                        <li>HTML - Textidentifiering med (h2) taggar</li>
+                        <li>CSS - Gör (h2) taggar blå</li>
+                        <li>JS - Validerar klientsidekod</li>
+                        <li>Ruby - Anpassad backend på serversidan</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>FrontEnd och Backend</td>
+                <td>FrontEnd på klientsidan, Backend på serversidan</td>
+            </tr>
+            <tr>
+                <td>FTP-verktyg</td>
+                <td>Flyttar filer mellan datorer via nätverk</td>
+            </tr>
+        </table>
         <h1>Svar:</h1>
-        <ol>
-            <li>
-                Storyboards används både för enklare kommunikation mellan
-                utvecklaren och klienten men också för att styla.
-            </li>
-            <li>
-                Wireframes används för att testa funktionalitet som med
-                prototype verktyget "Figma".
-            </li>
-            <li>
-                När en Klient frågar om en resurs skickar den en http/https
-                request till en api endpoint med en header som inkluderar ett
-                http GET method.
-            </li>
-            <li>
-                En http request med en HEAD method skickas till en endpoint kan
-                responsen inte inkludera en body utan endast en header.
-            </li>
-            <li>
-                Hallway testing utförs genom att man har slumpmässiga individer
-                som testar sidan
-            </li>
-            <li>
-                <ol type="a">
-                    <li>Grafisk designer - Storyboards</li>
-                    <li>FrontEnd programmerare - HTML och CSS</li>
-                    <li>Användarupplevelsedesigner - "Look and feel"</li>
-                    <li>Backend-programmerare - PHP-skript</li>
-                </ol>
-            </li>
-            <li>W3C skapar webstandards över hela världen.</li>
-            <li>
-                <ol type="a">
-                    <li>HTML - Indentifierar text som (h2) tag</li>
-                    <li>CSS - Gör alla (h2) taggar blå</li>
-                    <li>JS - Validerar kod på klientsidan</li>
-                    <li>Ruby - Skapar en anpassan backend på serversidan</li>
-                </ol>
-            </li>
-            <li>FrontEnd arbetar på klientsidan och backend på serversidan.</li>
-            <li>
-                Ett FTP-verktyg används för att flytta filer mellan datorer via
-                nätverk. Du installerar en FTP-klient, som FileZilla, ansluter
-                till servern och börjar överföra filer.
-            </li>
-        </ol>
+        <main>
+            <ol class="gradient-list">
+                <li>
+                    Storyboards används både för enklare kommunikation mellan
+                    utvecklaren och klienten men också för att styla.
+                </li>
+                <li>
+                    Wireframes används för att testa funktionalitet som med
+                    prototype verktyget "Figma".
+                </li>
+                <li>
+                    När en Klient frågar om en resurs skickar den en http/https
+                    request till en api endpoint med en header som inkluderar
+                    ett http GET method.
+                </li>
+                <li>
+                    En http request med en HEAD method skickas till en endpoint
+                    kan responsen inte inkludera en body utan endast en header.
+                </li>
+                <li>
+                    Hallway testing utförs genom att man har slumpmässiga
+                    individer som testar sidan
+                </li>
+                <li>
+                    <ol type="a">
+                        <li>Grafisk designer - Storyboards</li>
+                        <li>FrontEnd programmerare - HTML och CSS</li>
+                        <li>Användarupplevelsedesigner - "Look and feel"</li>
+                        <li>Backend-programmerare - PHP-skript</li>
+                    </ol>
+                </li>
+                <li>W3C skapar webstandards över hela världen.</li>
+                <li>
+                    <ol type="a">
+                        <li>HTML - Indentifierar text som (h2) tag</li>
+                        <li>CSS - Gör alla (h2) taggar blå</li>
+                        <li>JS - Validerar kod på klientsidan</li>
+                        <li>
+                            Ruby - Skapar en anpassan backend på serversidan
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    FrontEnd arbetar på klientsidan och backend på serversidan.
+                </li>
+                <li>
+                    Ett FTP-verktyg används för att flytta filer mellan datorer
+                    via nätverk. Du installerar en FTP-klient, som FileZilla,
+                    ansluter till servern och börjar överföra filer.
+                </li>
+            </ol>
+        </main>
     </body>
 </html>
