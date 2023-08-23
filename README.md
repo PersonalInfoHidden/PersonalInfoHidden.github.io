@@ -1,3 +1,3 @@
 ## PersonalInfoHidden.github.io
 
-The first project for the course `Webutveckling 1`
+The first project for the course `Webbutveckling 1`
