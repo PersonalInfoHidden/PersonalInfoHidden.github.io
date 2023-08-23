@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f47d.svg"
+            type="image/x-icon"
+        />
+        <title>Hello World Site</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f47d.svg" type="image/x-icon">
-    <title>Hello World Site</title>
-</head>
+    <body>
+        <nav>
+            <ul id="navUl"></ul>
+        </nav>
+        <h1>Hello World</h1>
+        <img src="/matris.jpg" alt="Jim Mattis" />
+        <script defer>
+            document.addEventListener("DOMContentLoaded", () => {
+                const navElements = [
+                    ["Home", "/"],
+                    ["http", "/httpheadwebutveckling/answers.html"],
+                ];
 
-<body>
-    <h1>Hello World</h1>
-    <img src="/matris.jpg" alt="Jim Mattis">
-    <ol>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
+                let navUl = document.getElementById("navUl");
+                navUl.innerHTML = "";
 
-</body>
-
+                navElements.forEach((value) => {
+                    navUl.innerHTML += `<li><a href="${value[1]}">${value[0]}</a></li>`;
+                });
+            });
+        </script>
+    </body>
 </html>
