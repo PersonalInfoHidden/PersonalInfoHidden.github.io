@@ -8,6 +8,7 @@
             href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f573.svg"
             type="image/x-icon"
         />
+        <link rel="stylesheet" href="globals.css" />
         <title>Hello World Site</title>
     </head>
 
@@ -18,11 +19,13 @@
         <h1>Hello World</h1>
         <img src="/matris.jpg" alt="Jim Mattis" />
         <script defer>
+            const cPath = (dir) => `/${dir}/answers.html`;
             document.addEventListener("DOMContentLoaded", () => {
                 const navElements = [
                     ["Home", "/"],
-                    ["http", "/http/answers.html"],
-                    ["tags", "/tags/answers.html"],
+                    ["Http", cPath("http")],
+                    ["Tags", cPath("tags")],
+                    ["Validation", cPath("validation")],
                 ];
 
                 let navUl = document.getElementById("navUl");
