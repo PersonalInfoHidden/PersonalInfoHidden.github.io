@@ -19,13 +19,16 @@
         <h1>Hello World</h1>
         <img src="/matris.jpg" alt="Jim Mattis" />
         <script defer>
-            const cPath = (dir) => `/${dir}/answers.html`;
+            const cPath = (dir) => {
+                return `/${dir}/answers.html`;
+            };
             document.addEventListener("DOMContentLoaded", () => {
                 const navElements = [
                     ["Home", "/"],
                     ["History", cPath("history")][("Http", cPath("http"))],
                     ["Tags", cPath("tags")],
                     ["Validation", cPath("validation")],
+                    ["Valid Page", "/validhtml/valid.html"],
                 ];
 
                 let navUl = document.getElementById("navUl");
