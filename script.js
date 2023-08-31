@@ -4,7 +4,8 @@ const cPath = (dir) => {
 
 const navElements = [
     ["Home", "/"],
-    ["History", cPath("history")][("Http", cPath("http"))],
+    ["History", cPath("history")],
+    ["Http", cPath("http")],
     ["Tags", cPath("tags")],
     ["Validation", cPath("validation")],
     ["Valid Page", "/validhtml/valid.html"],
