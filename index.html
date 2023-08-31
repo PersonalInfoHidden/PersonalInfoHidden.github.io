@@ -23,7 +23,8 @@
             document.addEventListener("DOMContentLoaded", () => {
                 const navElements = [
                     ["Home", "/"],
-                    ["History", cPath("history")][("Http", cPath("http"))],
+                    ["History", cPath("history")],
+                    ["Http", cPath("http")],
                     ["Tags", cPath("tags")],
                     ["Validation", cPath("validation")],
                 ];
@@ -32,6 +33,7 @@
                 navUl.innerHTML = "";
 
                 navElements.forEach((value) => {
+                    console.log(value);
                     navUl.innerHTML += `<li><a href="${value[1]}">${value[0]}</a></li>`;
                 });
             });
