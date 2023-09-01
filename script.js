@@ -8,8 +8,8 @@ const navElements = [
     ["Http", cPath("http")],
     ["Tags", cPath("tags")],
     ["Validation", cPath("validation")],
-    ["Valid Page", "/validhtml/valid.html"],
-    ["Char",cPath("charset")]
+    ["Lagar", cPath("lagar")],
+    ["Textformatering", cPath("textformatering")],
 ];
 
 let navUl = document.getElementById("navUl");

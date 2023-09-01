@@ -16,28 +16,32 @@
     <body>
         <nav>
             <ul id="navUl"></ul>
+            <ul>
+                <li><a href="/textformatering/heading.html">Headings</a></li>
+                <li><a href="/textformatering/paragraphs.html">Paragraf</a></li>
+                <li><a href="/textformatering/htmltext.html">htmltext</a></li>
+                <li>
+                    <a href="/textformatering/preformatted.html">Preformat</a>
+                </li>
+                <li>
+                    <a href="/textformatering/lineformating.html"
+                        >lineformating</a
+                    >
+                </li>
+                <li>
+                    <a href="/textformatering/thematicbreak.html"
+                        >thematicbreak</a
+                    >
+                </li>
+                <li>
+                    <a href="/textformatering/emphase.html">emphase </a>
+                </li>
+                <li>
+                    <a href="/textformatering/alltogether.html">alltogether</a>
+                </li>
+            </ul>
         </nav>
         <h1>Hello World</h1>
         <img src="/matris.jpg" alt="Jim Mattis" />
-        <script defer>
-            const cPath = (dir) => `/${dir}/answers.html`;
-            document.addEventListener("DOMContentLoaded", () => {
-                const navElements = [
-                    ["Home", "/"],
-                    ["History", cPath("history")],
-                    ["Http", cPath("http")],
-                    ["Tags", cPath("tags")],
-                    ["Validation", cPath("validation")],
-                ];
-
-                let navUl = document.getElementById("navUl");
-                navUl.innerHTML = "";
-
-                navElements.forEach((value) => {
-                    console.log(value);
-                    navUl.innerHTML += `<li><a href="${value[1]}">${value[0]}</a></li>`;
-                });
-            });
-        </script>
     </body>
 </html>
