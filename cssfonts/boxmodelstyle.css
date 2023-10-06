@@ -1,0 +1,14 @@
+.a {
+    margin: 40px;
+}
+
+.b {
+    margin: 20px;
+    padding: 20px;
+}
+
+.c {
+    margin: 30px;
+    padding: 30px;
+    border: 7px solid #22AABB;
+}
