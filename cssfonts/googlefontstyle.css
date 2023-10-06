@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&family=Jost:wght@300&family=Suwannaphum:wght@700&display=swap');
+
+.a {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.b {
+    font-family: 'Jost', sans-serif;
+}
+
+.c {
+    font-family: 'Suwannaphum', serif;
+}
+
+span {
+    font-weight: bold;
+}
+
+div {
+    width: 300px;
+    background-color: whitesmoke;
+    background-image: linear-gradient(white,  Pink);
+    box-shadow: 5px 5px black;
+    margin: 50px;
+    padding: 10px;
+
+}
+
+body {
+    background-color: whitesmoke;
+}
