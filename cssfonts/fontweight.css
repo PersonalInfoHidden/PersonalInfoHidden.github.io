@@ -1,0 +1,31 @@
+body{
+    background-color: #F7A6AC;
+}
+.a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.b{
+    font-family: 'Courier New', Courier, monospace;
+}
+.c{
+    font-family: 'Times New Roman', Times, serif;
+}
+.a,.b,.c{
+    background-color: #F37C84;
+    box-shadow: 5px 5px black;
+    background-image: linear-gradient(#F7A6AC,#F37C84);
+    width: 300px;
+    margin: 20px;
+}
+.lighter{
+    font-weight: lighter;
+}
+.normal{
+    font-weight: normal;
+}
+.bold{
+    font-weight: bold;
+}
+.bolder{
+    font-weight: bolder;
+}
