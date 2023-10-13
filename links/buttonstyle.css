@@ -1,0 +1,33 @@
+body{
+    background-color: limegreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 1em;
+}
+button{
+    text-align: center;
+    display:block;
+    color: blue;
+    padding-top: 18px;
+    background-color: grey;
+    width: 250px;
+    border-radius: 15px;
+}
+div{
+    width: 250px;
+    height: 100px;
+}
+button:hover{
+    background-color: rgb(69, 69, 69);
+}
+.green{
+    border-left: ridge 8px green;
+}
+.red{
+    border-left: ridge 8px red;
+}
+.yellow{
+    border-left: ridge 8px yellow;
+}
+.blue{
+    border-left: ridge 8px blue;
+}
