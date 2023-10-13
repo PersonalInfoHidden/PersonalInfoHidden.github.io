@@ -5,7 +5,10 @@ body{
 }
 button{
     text-align: center;
-    display:block;
+    font-size: large;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color: blue;
     padding-top: 18px;
     background-color: grey;
