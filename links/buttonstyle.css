@@ -5,10 +5,7 @@ body{
 }
 button{
     text-align: center;
-    font-size: large;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    display:block;
     color: blue;
     padding-top: 18px;
     background-color: grey;

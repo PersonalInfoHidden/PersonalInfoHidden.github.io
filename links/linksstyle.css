@@ -1,11 +1,10 @@
-body {
-    background-color: #DEFF9C;
+body{
+background-color: #DEFF9C;
 
 }
-
-a {
+a{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    margin: 10px;
-    padding: 10px;
+font-size: 1em;
+margin: 10px;
+padding: 10px;
 }
