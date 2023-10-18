@@ -1,33 +1,33 @@
-body{
+body {
     background-color: limegreen;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-family: 1em;
 }
-button{
+button {
     text-align: center;
-    display:block;
+    display: block;
     color: blue;
     padding-top: 18px;
     background-color: grey;
     width: 250px;
     border-radius: 15px;
 }
-div{
+div {
     width: 250px;
     height: 100px;
 }
-button:hover{
+button:hover {
     background-color: rgb(69, 69, 69);
 }
-.green{
+.green {
     border-left: ridge 8px green;
 }
-.red{
+.red {
     border-left: ridge 8px red;
 }
-.yellow{
+.yellow {
     border-left: ridge 8px yellow;
 }
-.blue{
+.blue {
     border-left: ridge 8px blue;
 }
