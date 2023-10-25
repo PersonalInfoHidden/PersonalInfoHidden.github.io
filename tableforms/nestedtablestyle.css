@@ -1,0 +1,61 @@
+body {
+    padding: 1rem 2rem;
+    background-color: #b9ffc5;
+}
+
+div {
+    font-style: italic;
+    text-align: center;
+}
+
+.lowertable {
+    border: blue solid 2px;
+    border-collapse: collapse;
+    box-shadow: 0.5rem 0.25rem black;
+    text-align: center;
+}
+
+.uppertable {
+    border: blue solid 2px;
+    border-collapse: collapse;
+    box-shadow: 0.5rem 0.25rem black;
+    width: 100%;
+    text-align: center;
+    min-height: 500px;
+}
+
+.uppertable > thead {
+    color: blueviolet;
+}
+
+.uppertable th {
+    border: 1px lightgrey solid;
+    border-bottom: none;
+}
+
+.uppertable tr {
+    min-height: 520px;
+}
+
+.uppertable td {
+    padding: 1rem 2rem;
+    border: 1px solid gray;
+}
+
+.lowertable th,
+.lowertable td {
+    border: 1px solid black;
+    padding: 1rem 2rem;
+}
+
+.lowertable th {
+    color: red;
+}
+
+.lowertable tfoot {
+    color: blue;
+}
+
+.uppertable > tfoot {
+    color: orange;
+}
