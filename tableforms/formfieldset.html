@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formfieldsetstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form with fieldset</h1>
+    <form>
+        <fieldset>
+          <legend>Login</legend>
+          <label class="blue" for="Username">Username:
+            <input type="text" name="Username" required>
+        </label><br>
+        <label class="blue" for="Password">Password:
+            <input type="password" name="Password" required>
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender*</legend>
+            <label for="male">Male
+                <input type="radio" name="gender"><br>
+            </label>
+            <label for="female">Female
+                <input type="radio" name="gender">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Programming Skill</legend>
+            <label>Java
+                <input type="checkbox" value="Java"><br>
+            </label>
+            <label>C++
+                <input type="checkbox" value="C++"><br>
+            </label>
+            <label>C#
+                <input type="checkbox" value="C#">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Fruit</legend>
+            <label for="fruit">Choose a fruit:</label>
+            <select name="fruit">
+                <option value="Banana">Banana</option>
+                <option value="Mango">Mango</option>
+                <option value="Apple">Apple</option>
+                <option value="Kiwi">Kiwi</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Comment</legend>
+            <textarea name="message" cols="30" rows="10">Enter yor comment here</textarea>
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
+    
+</body>
+</html>

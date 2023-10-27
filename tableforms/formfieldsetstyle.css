@@ -1,0 +1,13 @@
+body{
+    background-color: lightgreen;
+}
+legend{
+    background-color: pink;
+    color: purple;
+}
+fieldset{
+    border: 1px solid purple;
+}
+label{
+    color: blue;
+}
