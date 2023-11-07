@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: block; padding: 1rem 2rem; background-color: aqua;">
+        <h1><a href="aftonbladet.se">Läs Aftonbladet</a></h1>
+    </div>
+    <script>window.onload = function () {
+            alert("webbsidan är laddat ");
+
+        }
+        window.onbeforeunload = function (event) {
+            event.preventDefault();
+            return (event.ReturnValue == "");
+        }
+    </script>
+</body>
+
+</html>
