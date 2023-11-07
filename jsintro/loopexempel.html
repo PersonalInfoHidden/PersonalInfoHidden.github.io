@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>först med for</p>
+    <p id="for"></p>
+    <p>Nu med while</p>
+    <p id="while"></p>
+    <script>
+        let forText = document.getElementById('for');
+        let whileText = document.getElementById('while');
+        const message = 'Hejsan från Haris Drapic. Jag tycker att det är bra tutorial i Javascript! '; 
+    
+        for (let i = 0; i < message.length; i++) {
+            forText.innerText += message[i] + '-' 
+        }
+        let meese = 0;
+        while (meese < message.length) {
+            whileText.innerText += message[i] + '-' 
+        }
+
+    </script>
+</body>
+</html>
