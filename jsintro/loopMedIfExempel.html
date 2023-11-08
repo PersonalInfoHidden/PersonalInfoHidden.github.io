@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="sum-down-input">Enter number (number>0)</label><input type="number" name="sum-down-input"
+        id="number-input">
+    <div>
+        <span id="response-output"></span>
+    </div>
+
+    <script>
+        const inputNumber = document.getElementById("number-input");
+        const response = document.getElementById("response-output");
+
+        inputNumber.addEventListener("change", (event) => {
+            const inpValue = event.target.value;
+            console.log(inpValue);
+            if (!inpValue) {
+                response.innerText = "Error with value of input"
+                return;
+            }
+            const parcedNum = parseInt(inpValue);
+            const flooredInt = Math.floor(parcedNum);
+            if (flooredInt <= 0) {
+                response.innerText = "Number is less than 0 or equal to 0 (numbers are rounded down)"
+                return;
+            }
+            const globalOutput = {
+                forValue: 0,
+                whileValue: 0,
+            }
+            for (let i = 1; i <= flooredInt; i++) {
+                globalOutput.forValue += i;
+            }
+            let n = 1;
+            while (n <= flooredInt) {
+                globalOutput.whileValue += n;
+                n++;
+            }
+            response.innerText = `Nummer summerade med for: ${globalOutput.forValue}
+            Nummer summerade med while: ${globalOutput.whileValue}`;
+            return
+        })
+    </script>
+</body>
+
+</html>
