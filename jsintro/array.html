@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="output"></div>
+    <script>
+        const output = document.getElementById("output");
+
+        var elements = ["Dubai", "Paris", "Mumbai", "Dallas", "Houston", "Madrid"];
+        var city = prompt("Name a city", "Copenhagen");
+        elements.push(city);
+        elements.splice(2, 0, "Stockholm")
+        elements.splice(4, 1)
+
+        elements.forEach((value, i) => { output.innerHTML += `<div>${value} at index ${i}</div>` })
+    </script>
+</body>
+
+</html>
