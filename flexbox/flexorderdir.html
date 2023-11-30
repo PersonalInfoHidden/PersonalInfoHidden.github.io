@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: darkred;
+            text-align: center; /* Center the text in the header */
+            height: 60px;
+            line-height: 60px; /* Center vertically in the header */
+        }
+        .head, .header, .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the flex items horizontally */
+        }
+        .article {
+            background-color: aqua;
+            text-align: center;
+            order: 2;
+            flex: 60%;
+        }
+        #news, #contact {
+            background-color: tomato;
+            text-align: center; /* Center the text in news and contact divs */
+        }
+        #news{
+            order: 1;
+            line-height: 50%;
+        }
+        #contact{
+            order: 3;
+            line-height: 10%;
+        }
+        .footer {
+            height: 40px;
+            background-color: purple;
+            justify-content: end;
+            line-height: 40px; /* Center vertically in the footer */
+            width: 100%; /* Ensure the footer spans the full width */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Hip & happening inline</div>
+    <div class="head">
+        <div class="article">
+            <h2>Where It's At</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget tristique elit. Etiam euismod dictum lectus, ut efficitur diam tristique facilisis. Cras sem tortor, dignissim at massa ut, fermentum molestie ligula. Mauris purus nisi, lacinia ac sem id, pretium sagittis mi. Nunc ultricies odio id ipsum bibendum, non posuere nisl consequat. Aliquam non pellentesque velit. Quisque sit amet pretium odio. In convallis quis lectus non laoreet. Integer non erat quis eros elementum ultricies quis in tellus.</p>
+        </div>
+        <div id="news"><h2>News</h2></div>
+        <div id="contact"><h2>Contact</h2></div>
+    </div> 
+    <div class="footer">The small print</div>
+</body>
+</html>
