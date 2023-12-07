@@ -5,57 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile First</title>
     <style>
-      .wrapper {
-          padding: 5rem 6rem;
-          display: flex;
-          flex-wrap: wrap;
-      }
-      .wrapper div {
-          display: flex;
-           justify-content: center;
-           align-items: center;
-        
-      }
-
-      .header{
-          background-color: tomato;
-          height: 30px;
-          order: 1;
-          text-align: center;
-          flex-basis: 100%;
-      }
-      .main{
-          background-color: lightskyblue;
-          order: 2;
-          flex-basis: 100%;
-
-      }
-      .aside-1{
-          background-color: yellow;
-          order: 3;
-          height: 30px;
-          text-align: center;
-          flex-basis: 100%;
-      }
-      .aside-2{
-          background-color: pink;
-          order: 4;
-          height: 30px;
-          text-align: center;
-          flex-basis: 100%;
-      }
-      .footer{
-          background-color: lightgreen;
-          order: 5;
-          height: 30px;
-          text-align: center;
-          flex-basis: 100%;
-      }
-      @media screen and (min-width: 560px) and (max-width: 860px) {
-            .aside{
-              flex-basis: 50%;
+            .wrapper {
+                padding: 5rem 6rem;
+                display: flex;
+                flex-wrap: wrap;
             }
-        }
+            .wrapper div {
+                display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 width: 100%;
+                 text-align: center;
+            }
+
+            .header{
+                background-color: tomato;
+                height: 30px;
+                text-align: center;
+                flex-basis: 100%;
+            }
+            .main{
+                background-color: lightskyblue;
+                flex-basis: 100%;
+            }
+            .aside-1{
+                background-color: yellow;
+                text-align: center;
+                flex-basis: 100%;
+                min-height: 30px;
+            }
+            .aside-2{
+                background-color: pink;
+                text-align: center;
+                flex-basis: 100%;
+                min-height: 30px;
+            }
+            .footer{
+                background-color: lightgreen;
+                min-height: 30px;
+                text-align: center;
+                flex-basis: 100%;
+            }
+            @media screen and (min-width: 560px) and (max-width: 900px) {
+                  .aside{
+                    flex-basis: 50%;
+                  }
+              }
+
+            @media screen and (min-width: 900px) {
+                .wrapper {
+                  display: grid;
+                  grid-auto-columns: minmax(0, 1fr);
+                  grid-template-areas: 
+                  "a a a a"
+                  "b c c d"
+                  "e e e e"
+                  ;
+                }
+                .header {
+                  grid-area: a;
+                }
+                .aside-1 {
+                  grid-area: b;
+                }
+                 .main {
+                  grid-area: c;
+                }
+                .aside-2 {
+                  grid-area: d;
+                }
+                .footer {
+                  grid-area: e;
+                }
+            }
     </style>
   </head>
 
