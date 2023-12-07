@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile First</title>
+    <style>
+      .wrapper {
+          padding: 5rem 6rem;
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .wrapper div {
+          display: flex;
+           justify-content: center;
+           align-items: center;
+        
+      }
+
+      .header{
+          background-color: tomato;
+          height: 30px;
+          order: 1;
+          text-align: center;
+          flex-basis: 100%;
+      }
+      .main{
+          background-color: lightskyblue;
+          order: 2;
+          flex-basis: 100%;
+
+      }
+      .aside-1{
+          background-color: yellow;
+          order: 3;
+          height: 30px;
+          text-align: center;
+          flex-basis: 100%;
+      }
+      .aside-2{
+          background-color: pink;
+          order: 4;
+          height: 30px;
+          text-align: center;
+          flex-basis: 100%;
+      }
+      .footer{
+          background-color: lightgreen;
+          order: 5;
+          height: 30px;
+          text-align: center;
+          flex-basis: 100%;
+      }
+      @media screen and (min-width: 560px) and (max-width: 860px) {
+            .aside{
+              flex-basis: 50%;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">Header</div>
+      <div class="main">
+        <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+          egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+          eleifend leo.
+        </p>
+      </div>
+      <div class="footer">Footer</div>
+      <div class="aside aside-1">Aside 1</div>
+      <div class="aside aside-2">Aside 2</div>
+    </div>
+  </body>
+</html>
