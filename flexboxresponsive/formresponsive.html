@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+
+            body {
+                background-color: lightblue;
+            }
+            .wrapper {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .wrapper > li {
+                display: flex;
+                justify-content: space-between;
+            }
+             .wrapper > li > label {
+                flex: 400px;
+            }
+            .wrapper > li > input {
+                flex: 100%;
+            }
+            .wrapper > li:nth-child(4) {
+                display: flex;
+                justify-content: end;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <ul class="wrapper">
+                <li class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" />
+                </li>
+                <li class="form-row">
+                    <label for="cityborn">City-born : </label>
+                    <input type="text" id="cityborn" />
+                </li>
+                <li class="form-row">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" />
+                </li>
+                <li class="form-row">
+                    <button type="submit">Submit:</button>
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>
