@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Nested flex</title>
+        <style>
+
+
+            .wrapper{
+                flex-wrap: wrap;
+                display: flex;
+                color: white;
+                text-align: center;
+            }
+            .wrapper > div{
+                padding: 5px;
+                background-color: blue;
+                border-radius: 5px;
+                flex: 2 10 5px;
+                margin: 5px;
+            }
+            .second > div{
+                border-radius: 5px;
+                margin: 5px;
+                flex: 1 1 0px;
+            }
+            .red{
+                background-color: red;
+            }
+            .green{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="second">
+                1
+                <div class="green">1a</div>
+                <div class="red">1b</div>
+            </div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="wrapper">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+        <div class="wrapper">
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+    </body>
+</html>

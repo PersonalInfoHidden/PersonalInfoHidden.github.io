@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        '
+        <style>
+            .wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .footer{
+                order: 1;
+                background-color: lightgreen;
+            }
+            .aside-3{
+                order: 2;
+                background-color: tomato;
+            }
+            .aside-2{
+                order: 3;
+                background-color: beige;
+            }
+            .aside-1{
+                order: 4;
+                background-color: gold;
+            }
+            .main{
+                order: 5;
+                background-color: lightblue;
+            }
+            .header{
+                order: 6;
+                background-color: red;
+            }
+            .bild{
+                padding: 5px;
+            }
+            .aside, .main, .header, .footer{
+                box-shadow: 5px 5px black;
+                flex: 1 100%;
+            }
+            @media screen and (min-width: 500px) {
+            .footer{
+                order: 4;
+            }
+            .aside-3{
+                order: 3;
+                flex-basis: 0;
+            }
+            .aside-2{
+                order: 3;
+                flex-basis: 0;
+            }
+            .aside-1{
+                order: 3;
+                flex-basis: 0;
+            }
+            .main{
+                order: 2;
+            }
+            .header{
+                order: 1;
+            }
+            }
+            @media screen and (min-width: 800px) {
+            .footer{
+                order: 6;
+            }
+            .aside-3{
+                order: 4;
+                flex-basis: 0;
+                flex-grow: 1;
+            }
+            .aside-2{
+                order: 2;
+                flex-basis: 0;
+                flex-grow: 1;
+            }
+            .aside-1{
+                order: 3;
+                flex-basis: 0;
+                flex-grow: 2;
+            }
+            .main{
+                order: 5;
+                flex-basis: 0;
+                flex-grow: 4;
+            }
+            .header{
+                order: 1;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">Beginning</div>
+            <div class="main">
+                <p>
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                    feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+                    eu libero sit amet quam egestas semper. Aenean ultricies mi
+                    vitae est. Mauris placerat eleifend leo.
+                </p>
+            </div>
+            <div class="aside aside-1">
+                <img src="foto3s.png" class="bild" />
+            </div>
+            <div class="aside aside-2">Aside section 1</div>
+            <div class="aside aside-3">Aside section 2</div>
+            <div class="footer">This is the end.</div>
+        </div>
+    </body>
+</html>

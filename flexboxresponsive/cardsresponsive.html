@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .wrapper {
-          display: flex;
-          flex-wrap: wrap;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .wrapper {
+                display: flex;
+                flex-wrap: wrap;
 
-      }
+            }
 
-      img {
-          box-shadow: red 4px 4px;
-          margin: 20px;
-      }
+            img {
+                box-shadow: red 4px 4px;
+                margin: 20px;
+            }
 
-      body {
-          background-color: lightgreen;
-      }
+            body {
+                background-color: lightgreen;
+            }
 
-      .first {
-          order: 3;
-          flex: 1 100%;
-      }
+            .first {
+                order: 3;
+                flex: 1 100%;
+            }
 
-      .second {
-          order: 2;
-          flex: 1 100%;
+            .second {
+                order: 2;
+                flex: 1 100%;
 
-      }
+            }
 
-      .third {
-          order: 1;
-          flex: 1 100%;
+            .third {
+                order: 1;
+                flex: 1 100%;
 
-      }
+            }
 
-      @media screen and (min-width: 530px) {
-          .third {
-              order: 3;
+            @media screen and (min-width: 530px) {
+                .third {
+                    order: 3;
 
-          }
+                }
 
-          .second {
-              order: 2;
-              flex: 1 0px;
-          }
+                .second {
+                    order: 2;
+                    flex: 1 0px;
+                }
 
-          .first {
-              order: 1;
-              flex: 1 0px;
-          }
-      }
+                .first {
+                    order: 1;
+                    flex: 1 0px;
+                }
+            }
 
-      @media screen and (min-width: 910px) {
-          .third {
-              order: 1;
-              flex: 1 0px;
-          }
+            @media screen and (min-width: 910px) {
+                .third {
+                    order: 1;
+                    flex: 1 0px;
+                }
 
-          .second {
-              order: 3;
-              flex: 1 0px;
-          }
+                .second {
+                    order: 3;
+                    flex: 1 0px;
+                }
 
-          .first {
-              order: 2;
-              flex: 1 0px;
-          }
-      }
-    </style>
-  </head>
+                .first {
+                    order: 2;
+                    flex: 1 0px;
+                }
+            }
+        </style>
+    </head>
 
-  <body>
-    <div class="wrapper">
-      <img class="first" src="foto1s.png" />
-      <img class="second" src="foto2s.png" />
-      <img class="third" src="foto3s.png" />
-    </div>
-  </body>
+    <body>
+        <div class="wrapper">
+            <img class="first" src="foto1s.png" />
+            <img class="second" src="foto2s.png" />
+            <img class="third" src="foto3s.png" />
+        </div>
+    </body>
 </html>
